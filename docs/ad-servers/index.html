@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Ad Servers · Pubops Help Center</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Setting up orders, line items and creatives in your ad server can be a tedious part of the sales process. Luckily with Pubops we can automate it for you. Currently we support only Google Ad Manager (formerly known as DFP) but other ad servers are on our roadmap as well.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Ad Servers · Pubops Help Center"/><meta property="og:type" content="website"/><meta property="og:url" content="https://help.pubops.io/"/><meta property="og:description" content="&lt;p&gt;Setting up orders, line items and creatives in your ad server can be a tedious part of the sales process. Luckily with Pubops we can automate it for you. Currently we support only Google Ad Manager (formerly known as DFP) but other ad servers are on our roadmap as well.&lt;/p&gt;
+"/><meta property="og:image" content="https://help.pubops.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://help.pubops.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/undefined"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Pubops Help Center</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/publisher" target="_self">Publisher</a></li><li class=""><a href="/docs/advertiser" target="_self">Advertiser</a></li><li class=""><a href="https://pubops.io/" target="_blank">Go to Pubops</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guide</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/publisher">Publisher Intro</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/ad-servers">Ad Servers</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Ad Servers</h1></header><article><div><span><p>Setting up orders, line items and creatives in your ad server can be a tedious part of the sales process. Luckily with Pubops we can automate it for you. Currently we support only Google Ad Manager (formerly known as DFP) but other ad servers are on our roadmap as well.</p>
+<h2><a class="anchor" aria-hidden="true" id="connecting-google-ad-manager"></a><a href="#connecting-google-ad-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connecting Google Ad Manager</h2>
+<p>To connect your Google Ad Manager (GAM) account to your Pubops account head over to <a href="https://pubops.io/publisher/ad-servers">Ad Servers</a> and click on &quot;Enable&quot;. You will be redirected to another page where you will have to login to your GAM account and then grant permission to Pubops to manage your GAM campaigns. Make sure you click &quot;Allow&quot; on that screen.</p>
+<p>Once you are redirected back to Pubops you will be presented with a select box to choose which GAM network you want to connect to (in case you have multiple ad networks under your GAM account). Currently Pubops supports only one GAM network connection per account. If you need support for multiple GAM networks per account please let us know.</p>
+<p>In case you need to connect GAM network that belongs to another GAM account you will have to disable existing connection and make a new one.</p>
+
+    <div class="admonition admonition-caution">
+      <div class="admonition-heading">
+        <h5><div class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"/></svg></div> caution</h5>
+      </div>
+      <div class="admonition-content">
+    <p>If you disable existing Google Ad Manager connection, all line items that are served by it won't function correctly. Technically they will continue delivering but you will lose automation and your advertisers might experience problems with self-service. Thus it is strongly recommended not to do so if you have any running orders that are served by GAM.</p>
+</div></div></span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/publisher"><span class="arrow-prev">← </span><span>Publisher Intro</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 Stride Limited</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'undefined',
+                indexName: 'undefined',
+                inputSelector: '#search_input_react'
+              });
+            </script><script src="http://localhost:undefined/livereload.js"></script></body></html>
