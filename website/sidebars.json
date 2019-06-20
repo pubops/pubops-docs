@@ -1,6 +1,6 @@
 {
   "publisher": {
-    "Guide": ["publisher"]
+    "Guide": ["publisher", "ad-servers"]
   },
   "advertiser": {
     "Guide": ["advertiser"]
