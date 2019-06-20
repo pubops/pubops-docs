@@ -30,6 +30,10 @@ const siteConfig = {
     secondaryColor: '#6f49c4',
   },
 
+  markdownPlugins: [
+    require('remarkable-admonitions')({ icon: 'svg-inline' })
+  ],
+
   /* Custom fonts for website */
   /*
   fonts: {
