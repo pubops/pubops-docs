@@ -7,6 +7,18 @@ Setting up orders, line items and creatives in your ad server can be a tedious p
 
 ## Connecting Google Ad Manager
 
+### Step 1: Enable API Access
+
+To be able for Pubops to communicate with Google Ad Manager you will need to enable API Access in your Google Ad Manager account. To do that follow these steps:
+
+1. Go to your Google Ad Manager account.
+2. Navigate to "Admin" -> "Global settings" -> "Network settings".
+3. Click the "API Access" toggle to enable it.
+4. Accept the API terms and conditions.
+5. Click "Save".
+
+### Step 2: Connect your accounts
+
 To connect your Google Ad Manager (GAM) account to your Pubops account head over to [Ad Servers](https://pubops.io/publisher/ad-servers) and click on "Enable". You will be redirected to another page where you will have to login to your GAM account and then grant permission to Pubops to manage your GAM campaigns. Make sure you click "Allow" on that screen.
 
 Once you are redirected back to Pubops you will be presented with a select box to choose which GAM network you want to connect to (in case you have multiple ad networks under your GAM account). Currently Pubops supports only one GAM network connection per account. If you need support for multiple GAM networks per account please let us know.
