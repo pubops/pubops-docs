@@ -15,6 +15,15 @@
 @media only screen and (min-width: 1500px) {
 }
 
+.fixedHeaderContainer header .headerTitleWithLogo {
+    color: #f5efff;
+    line-height: initial;
+}
+
+.fixedHeaderContainer header img {
+    height: 73%;
+}
+
 .nav-footer {
     background: #f1f2f5;
     color: #333;
