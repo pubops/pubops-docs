@@ -3,7 +3,8 @@
     "Guide": [
       "publisher",
       "ad-servers",
-      "properties"
+      "properties",
+      "ad-slots"
     ]
   },
   "advertiser": {
