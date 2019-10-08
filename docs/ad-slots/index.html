@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Ad Slots · Pubops Help Center</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Ad slots represent inventory of actual ad spaces or ad products that you sell. Depending on type of media where this ad slot is located these could be anything like banners, pre-roll, sponsored post, radio ad break, physical billboard, etc. Each ad slot contains important information such as its name, property to which it belongs, pricing information together with type and size of the creative.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Ad Slots · Pubops Help Center"/><meta property="og:type" content="website"/><meta property="og:url" content="https://help.pubops.io/"/><meta property="og:description" content="&lt;p&gt;Ad slots represent inventory of actual ad spaces or ad products that you sell. Depending on type of media where this ad slot is located these could be anything like banners, pre-roll, sponsored post, radio ad break, physical billboard, etc. Each ad slot contains important information such as its name, property to which it belongs, pricing information together with type and size of the creative.&lt;/p&gt;
+"/><meta property="og:image" content="https://help.pubops.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://help.pubops.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo-light.png" alt="Pubops Help Center"/><h2 class="headerTitleWithLogo">Pubops Help Center</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/publisher" target="_self">Publisher</a></li><li class=""><a href="/docs/advertiser" target="_self">Advertiser</a></li><li class=""><a href="https://pubops.io/" target="_blank">Go to Pubops</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guide</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/publisher">Publisher Intro</a></li><li class="navListItem"><a class="navItem" href="/docs/ad-servers">Ad Servers</a></li><li class="navListItem"><a class="navItem" href="/docs/properties">Properties</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/ad-slots">Ad Slots</a></li><li class="navListItem"><a class="navItem" href="/docs/analytics">Analytics</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Ad Slots</h1></header><article><div><span><p>Ad slots represent inventory of actual ad spaces or ad products that you sell. Depending on type of media where this ad slot is located these could be anything like banners, pre-roll, sponsored post, radio ad break, physical billboard, etc. Each ad slot contains important information such as its name, property to which it belongs, pricing information together with type and size of the creative.</p>
+
+    <div class="admonition admonition-note">
+      <div class="admonition-heading">
+        <h5><div class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></div> note</h5>
+      </div>
+      <div class="admonition-content">
+    <p>Currently we support only standard digital banner ads with image or third party creatives.</p>
+</div></div><p>Ad slots can be connected to an ad server for automatic trafficking and availability forecasting. Currently only Google Ad Manager (DFP) is supported.</p>
+<h2><a class="anchor" aria-hidden="true" id="create-an-ad-slot"></a><a href="#create-an-ad-slot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create an ad slot</h2>
+<ol>
+<li><p>To create an ad slot head over to <a href="https://pubops.io/publisher/adslots/list">Ad Slots</a> and click on <strong>Create</strong> button.</p></li>
+<li><p>Select <strong>Property</strong> to which this ad slot belongs to.</p></li>
+<li><p>Enter <strong>Name</strong> of the ad slot. It's important to make it descriptive for your buyers. An example of good name could be something like <em>&quot;Homepage Leaderboard ATF&quot;</em>.</p></li>
+<li><p>Enter <strong>Description</strong> <em>(optional)</em>. This can have any extra information that can be helpful to your buyers.</p></li>
+<li><p>Enter <strong>Size</strong> of your ad slot in pixels (example: 300x250). Currently we don't support multi-sized ad slots, instead you would need to create multiple ad slots with different sizes.</p></li>
+<li><p>Select <strong>Ad server</strong>:</p>
+<ul>
+<li><strong>Google Ad Manager (formerly DFP)</strong> – select this if you want to traffick this ad slot to your GAM network. If you don't see this option it means you did not <a href="/docs/ad-servers">connect your GAM account to Pubops</a>.</li>
+<li><strong>None</strong> – select this if you use any other ad server or serve your ads through any other means. With this selected you will have to provide estimated number of monthly impressions available. For delivery reporting you can use our impression tracking pixels and click-through tracking urls or opt to supply by manual input.</li>
+</ul></li>
+<li><p>Select <strong>Ad unit in GAM</strong> <em>(GAM only)</em> to which this ad slot is trafficked to in GAM. If you don't see your ad units in the list you can press on <strong>Refresh ad units list</strong> to reload list of ad units from GAM.</p></li>
+<li><p>Upload <strong>Screenshot of ad slot</strong> <em>(optional)</em> if you want to make it easier for buyers to understand what they are buying.</p></li>
+<li><p>Enter <strong>Estimate impressions available per month</strong> <em>(without ad server only)</em> if your ad slot is not connected to an ad server. For ad slots that are connected to an ad server we get this information from ad server's reporting services automatically.</p></li>
+<li><p>Select <strong>Pricing model</strong> from the list:</p>
+<ul>
+<li><strong>CPM</strong>: cost per thousand impressions. CPM ad slots are trafficked as standard fixed quantity campaigns.</li>
+<li><strong>CPD</strong>: cost per day. CPD ad slots are trafficked as 100% SOV (share of voice) sponsorship campaigns. Setting custom SOV is on our roadmap.</li>
+</ul></li>
+<li><p>Enter <strong>Base price</strong> for this unit. Base price is the price of the ad slot without any custom targeting applied.</p></li>
+<li><p>Select <strong>Allow geo-targeting by country</strong> <em>(optional)</em> if you want buyers to be able to target this ad slot to specific countries.</p></li>
+<li><p>Select <strong>Limit geo-targeting to specified countries</strong> <em>(optional)</em> if you want to allow geo-targeting by countries only from the list of countries you've supplied as opposed to all countries of the world.</p></li>
+<li><p>Enter <strong>Default price modifier</strong> that will be applied to base price as a premium for geo-targeting to any country not explicitly defined in the geo-targeting table.</p></li>
+<li><p>Click on <strong>Choose country</strong> to add any country to the geo-targeting table. You can specify price modifier for each country if needed. To remove any country from the list just click the remove icon next to the item.</p>
+
+    <div class="admonition admonition-tip">
+      <div class="admonition-heading">
+        <h5><div class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"/></svg></div> tip</h5>
+      </div>
+      <div class="admonition-content">
+    <p>Price modifiers come in two flavors. They can set relative to base price in percentage or they can be set to a fixed price, effectively overwriting base price with new value. Relative values can be negative if modified price needs to be lower than base price. In all cases though final price after modifier has been applied must be greater than 0.</p>
+</div></div></li>
+<li><p>Select <strong>Don't show this ad slot in rate card</strong> <em>(optional)</em> if you want to hide this ad slot from your public rate card. As an example this could be useful for special ad slots that are sold to specific clients.</p></li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/properties"><span class="arrow-prev">← </span><span>Properties</span></a><a class="docs-next button" href="/docs/analytics"><span>Analytics</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 Stride Limited</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'undefined',
+                indexName: 'undefined',
+                inputSelector: '#search_input_react'
+              });
+            </script><script src="http://localhost:undefined/livereload.js"></script></body></html>
