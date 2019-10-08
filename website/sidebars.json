@@ -4,7 +4,8 @@
       "publisher",
       "ad-servers",
       "properties",
-      "ad-slots"
+      "ad-slots",
+      "analytics"
     ]
   },
   "advertiser": {
