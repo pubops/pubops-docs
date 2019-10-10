@@ -2,10 +2,11 @@
   "publisher": {
     "Guide": [
       "publisher",
-      "ad-servers",
       "properties",
       "ad-slots",
-      "analytics"
+      "ad-servers",
+      "analytics",
+      "accounts"
     ]
   },
   "advertiser": {
