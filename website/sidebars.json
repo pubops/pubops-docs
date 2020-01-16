@@ -2,6 +2,7 @@
   "publisher": {
     "Guide": [
       "publisher",
+      "self-serve",
       "properties",
       "ad-slots",
       "ad-servers",
