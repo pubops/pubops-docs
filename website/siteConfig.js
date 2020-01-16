@@ -13,8 +13,6 @@ const siteConfig = {
   organizationName: 'pubops',
 
   headerLinks: [
-    {doc: 'publisher', label: 'Publisher'},
-    {doc: 'advertiser', label: 'Advertiser'},
     { href: 'https://pubops.io/', label: 'Go to Pubops', external: true },
     { search: true },
   ],
