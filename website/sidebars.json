@@ -6,7 +6,8 @@
       "ad-slots",
       "ad-servers",
       "analytics",
-      "accounts"
+      "accounts",
+      "orders"
     ]
   }
 }
