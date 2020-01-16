@@ -18,10 +18,11 @@
 .fixedHeaderContainer header .headerTitleWithLogo {
     color: #f5efff;
     line-height: initial;
+    font-weight: normal;
 }
 
 .fixedHeaderContainer header img {
-    height: 73%;
+    height: 65%;
 }
 
 .nav-footer {
