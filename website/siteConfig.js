@@ -14,7 +14,7 @@ const siteConfig = {
 
   headerLinks: [
     { href: 'https://pubops.io/', label: 'Go to Pubops', external: true },
-    { search: true },
+    { search: false },
   ],
 
   /* path to images for header/footer */
@@ -73,11 +73,11 @@ const siteConfig = {
   // Show documentation's last update time.
   enableUpdateTime: false,
 
-  algolia: {
+  // algolia: {
     // apiKey: 'my-api-key',
     // indexName: 'my-index-name',
     // algoliaOptions: {} // Optional, if provided by Algolia
-  },
+  // },
 };
 
 module.exports = siteConfig;
