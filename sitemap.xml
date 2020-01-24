@@ -5,8 +5,9 @@
 <url> <loc>https://help.pubops.io/docs/ad-slots</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/ad-slots" /> </url>
 <url> <loc>https://help.pubops.io/docs/advertiser</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/advertiser" /> </url>
 <url> <loc>https://help.pubops.io/docs/analytics</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/analytics" /> </url>
+<url> <loc>https://help.pubops.io/docs/getting-started</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/getting-started" /> </url>
 <url> <loc>https://help.pubops.io/docs/orders</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/orders" /> </url>
 <url> <loc>https://help.pubops.io/docs/properties</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/properties" /> </url>
-<url> <loc>https://help.pubops.io/docs/publisher</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/publisher" /> </url>
+<url> <loc>https://help.pubops.io/docs/roadmap</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/roadmap" /> </url>
 <url> <loc>https://help.pubops.io/docs/self-serve</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://help.pubops.io/docs/self-serve" /> </url>
 </urlset>
