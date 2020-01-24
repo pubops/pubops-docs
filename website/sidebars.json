@@ -1,6 +1,6 @@
 {
   "publisher": {
-    "Guide": [
+    "Basics": [
       "getting-started",
       "self-serve",
       "properties",
@@ -8,7 +8,8 @@
       "ad-servers",
       "analytics",
       "accounts",
-      "orders"
+      "orders",
+      "roadmap"
     ]
   }
 }
