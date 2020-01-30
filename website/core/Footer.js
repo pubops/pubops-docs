@@ -17,6 +17,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="nav-footer" id="footer">
+        <section className="copyright">For support questions write to <a href="mailto:support@pubops.io">support@pubops.io</a></section>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
